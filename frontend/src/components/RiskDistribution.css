@@ -1,0 +1,79 @@
+.risk-dist-body {
+  padding: 14px 16px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.risk-dist-row {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 12px;
+}
+
+.risk-dist-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-mute);
+}
+
+.risk-dist-track {
+  display: block;
+  height: 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--surface-inset);
+  overflow: hidden;
+}
+
+.risk-dist-fill {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  opacity: 0.85;
+  transition: width 0.4s ease;
+}
+
+.risk-dist-row.high .risk-dist-fill {
+  background: var(--critical);
+}
+
+.risk-dist-row.medium .risk-dist-fill {
+  background: var(--warn);
+}
+
+.risk-dist-row.low .risk-dist-fill {
+  background: var(--ok);
+}
+
+.risk-dist-row.medium .risk-dist-label,
+.risk-dist-row.medium .risk-dist-value {
+  color: var(--warn);
+}
+
+.risk-dist-row.high .risk-dist-label,
+.risk-dist-row.high .risk-dist-value {
+  color: var(--critical);
+}
+
+.risk-dist-value {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 650;
+  color: var(--text-strong);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .risk-dist-body {
+    padding: 12px;
+    gap: 9px;
+  }
+
+  .risk-dist-row {
+    grid-template-columns: 54px minmax(0, 1fr) 28px;
+    gap: 8px;
+  }
+}

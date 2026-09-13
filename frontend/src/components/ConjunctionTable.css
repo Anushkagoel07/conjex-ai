@@ -1,0 +1,377 @@
+/* Conjunction catalog — dense, interactive operations table */
+
+.catalog-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Text search */
+.catalog-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  background: var(--surface-inset);
+}
+
+.catalog-search .metric-label {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.catalog-search input {
+  border: none;
+  background: transparent;
+  color: var(--text-strong);
+  font-size: 11px;
+  width: 150px;
+  outline: none;
+}
+
+.catalog-search input::placeholder {
+  color: var(--text-dim);
+}
+
+.catalog-search:focus-within {
+  border-color: var(--accent-border);
+}
+
+.risk-filter {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-inset);
+  padding: 2px;
+  gap: 2px;
+}
+
+.risk-chip {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 5px;
+  color: var(--text-mute);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.risk-chip:hover {
+  color: var(--text-strong);
+  background: var(--hover-bg);
+}
+
+.risk-chip.active {
+  background: var(--accent-wash);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.risk-chip:focus-visible {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px var(--accent-glow);
+}
+
+.chip-count {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--text-dim);
+  background: var(--hover-bg);
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+
+.risk-chip.active .chip-count {
+  color: var(--accent);
+  background: transparent;
+}
+
+.conj-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+}
+
+.conj-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--text-dim);
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  white-space: nowrap;
+}
+
+/* Sortable column headers */
+.th-sort {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.th-sort:hover {
+  color: var(--accent);
+}
+
+.th-sort:focus-visible {
+  outline: none;
+  color: var(--accent);
+}
+
+.sort-arrow {
+  font-size: 8px;
+  opacity: 0.45;
+}
+
+.conj-table th.sorted .th-sort {
+  color: var(--accent);
+}
+
+.conj-table th.sorted .sort-arrow {
+  opacity: 1;
+}
+
+.conj-table th.num,
+.conj-table td.num {
+  text-align: right;
+}
+
+.conj-table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--row-border);
+  font-size: 11px;
+  color: var(--text-mute);
+  vertical-align: middle;
+}
+
+.conj-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.conj-row {
+  cursor: pointer;
+  transition: background 0.14s ease, box-shadow 0.14s ease;
+}
+
+.conj-row td {
+  transition: background 0.14s ease;
+}
+
+/* Hover state */
+.conj-row:hover td {
+  background: var(--row-hover);
+}
+
+.conj-row:hover .pair-spacecraft,
+.conj-row:hover .dist-cell {
+  color: var(--text-strong);
+}
+
+/* Selected row state */
+.conj-row.selected td {
+  background: var(--row-selected);
+}
+
+.conj-row.selected td:first-child {
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.conj-row.selected .pair-spacecraft,
+.conj-row.selected .dist-cell {
+  color: var(--text-strong);
+}
+
+.conj-row:focus-visible {
+  outline: none;
+}
+
+.conj-row:focus-visible td:first-child {
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.conj-row:focus-visible td {
+  background: var(--row-hover);
+}
+
+/* Object pair cell */
+.pair-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.pair-spacecraft,
+.pair-debris {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  min-width: 0;
+}
+
+.pair-spacecraft {
+  color: var(--text-strong);
+  font-weight: 600;
+  font-size: 11.5px;
+  letter-spacing: 0.2px;
+}
+
+.pair-debris {
+  color: var(--text-mute);
+  font-size: 11px;
+}
+
+.pair-spacecraft small,
+.pair-debris small {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.6px;
+  color: var(--text-dim);
+}
+
+.pair-sep {
+  color: var(--text-dim);
+  font-size: 10px;
+  flex: none;
+}
+
+.tca-cell,
+.dist-cell {
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+}
+
+.tca-cell {
+  color: var(--text-mute);
+  letter-spacing: 0.3px;
+}
+
+.dist-cell {
+  color: var(--text-mute);
+  font-weight: 600;
+}
+
+.dist-cell small,
+td.mono small {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+td.mono {
+  font-family: var(--mono);
+}
+
+/* Risk indicators */
+.risk-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.risk-dot.high {
+  background: var(--critical);
+  box-shadow: 0 0 6px var(--critical-glow);
+}
+
+.risk-dot.medium {
+  background: var(--warn);
+  box-shadow: 0 0 6px var(--warn-glow);
+}
+
+.risk-dot.low {
+  background: var(--ok);
+}
+
+.risk-label {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+}
+
+.risk-label.high {
+  color: var(--critical);
+}
+
+.risk-label.medium {
+  color: var(--warn);
+}
+
+.risk-label.low {
+  color: var(--ok);
+}
+
+.empty-row td {
+  text-align: center;
+  padding: 22px 14px;
+  color: var(--text-dim);
+  font-size: 11px;
+}
+
+.table-hint {
+  border-top: 1px solid var(--border);
+  padding: 8px 14px;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  color: var(--text-dim);
+}
+
+.hint-key {
+  color: var(--accent);
+  font-weight: 650;
+}
+
+@media (max-width: 640px) {
+  .catalog-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .catalog-search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .catalog-search {
+    flex: 1;
+  }
+
+  .risk-filter {
+    justify-content: space-between;
+  }
+
+  .risk-chip {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .panel-tag {
+    align-self: flex-end;
+  }
+}

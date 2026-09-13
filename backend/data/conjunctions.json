@@ -1,0 +1,432 @@
+[
+  {
+    "satellite_name": "STARLINK-31148",
+    "satellite_norad": 58741,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34856,
+    "time": "2026-09-13T03:07:00+00:00",
+    "minimum_distance_km": 12.239,
+    "relative_velocity_km_s": 4.1448,
+    "candidate_score": 0.351357
+  },
+  {
+    "satellite_name": "STARLINK-36589",
+    "satellite_norad": 67843,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34036,
+    "time": "2026-09-13T11:58:00+00:00",
+    "minimum_distance_km": 27.292,
+    "relative_velocity_km_s": 4.3978,
+    "candidate_score": 0.339813
+  },
+  {
+    "satellite_name": "STARLINK-6145",
+    "satellite_norad": 56389,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34856,
+    "time": "2026-09-12T20:55:00+00:00",
+    "minimum_distance_km": 31.339,
+    "relative_velocity_km_s": 4.3194,
+    "candidate_score": 0.357017
+  },
+  {
+    "satellite_name": "STARLINK-6320",
+    "satellite_norad": 57336,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33821,
+    "time": "2026-09-12T19:49:00+00:00",
+    "minimum_distance_km": 34.994,
+    "relative_velocity_km_s": 4.0875,
+    "candidate_score": 0.359465
+  },
+  {
+    "satellite_name": "STARLINK-34851",
+    "satellite_norad": 66447,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34036,
+    "time": "2026-09-13T09:34:00+00:00",
+    "minimum_distance_km": 42.137,
+    "relative_velocity_km_s": 4.1482,
+    "candidate_score": 0.322211
+  },
+  {
+    "satellite_name": "STARLINK-31927",
+    "satellite_norad": 59837,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34036,
+    "time": "2026-09-12T21:45:00+00:00",
+    "minimum_distance_km": 44.716,
+    "relative_velocity_km_s": 4.1195,
+    "candidate_score": 0.318839
+  },
+  {
+    "satellite_name": "STARLINK-36428",
+    "satellite_norad": 67362,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40797,
+    "time": "2026-09-13T11:13:00+00:00",
+    "minimum_distance_km": 49.617,
+    "relative_velocity_km_s": 4.1292,
+    "candidate_score": 0.348623
+  },
+  {
+    "satellite_name": "STARLINK-5805",
+    "satellite_norad": 56912,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34128,
+    "time": "2026-09-13T07:07:00+00:00",
+    "minimum_distance_km": 63.8,
+    "relative_velocity_km_s": 4.0944,
+    "candidate_score": 0.346277
+  },
+  {
+    "satellite_name": "STARLINK-31541",
+    "satellite_norad": 59633,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 36551,
+    "time": "2026-09-12T21:23:00+00:00",
+    "minimum_distance_km": 65.24,
+    "relative_velocity_km_s": 4.1727,
+    "candidate_score": 0.361211
+  },
+  {
+    "satellite_name": "STARLINK-5836",
+    "satellite_norad": 56386,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34856,
+    "time": "2026-09-13T12:43:00+00:00",
+    "minimum_distance_km": 70.406,
+    "relative_velocity_km_s": 4.4064,
+    "candidate_score": 0.356949
+  },
+  {
+    "satellite_name": "STARLINK-6160",
+    "satellite_norad": 56382,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34856,
+    "time": "2026-09-13T07:11:00+00:00",
+    "minimum_distance_km": 70.435,
+    "relative_velocity_km_s": 4.3701,
+    "candidate_score": 0.356977
+  },
+  {
+    "satellite_name": "STARLINK-6145",
+    "satellite_norad": 56389,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33795,
+    "time": "2026-09-13T05:31:00+00:00",
+    "minimum_distance_km": 71.625,
+    "relative_velocity_km_s": 4.1905,
+    "candidate_score": 0.350403
+  },
+  {
+    "satellite_name": "STARLINK-36031",
+    "satellite_norad": 66593,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33811,
+    "time": "2026-09-13T11:41:00+00:00",
+    "minimum_distance_km": 71.676,
+    "relative_velocity_km_s": 4.2491,
+    "candidate_score": 0.350893
+  },
+  {
+    "satellite_name": "STARLINK-35931",
+    "satellite_norad": 66519,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40794,
+    "time": "2026-09-13T02:54:00+00:00",
+    "minimum_distance_km": 74.932,
+    "relative_velocity_km_s": 4.5729,
+    "candidate_score": 0.355177
+  },
+  {
+    "satellite_name": "STARLINK-6333",
+    "satellite_norad": 56521,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34856,
+    "time": "2026-09-12T14:30:00+00:00",
+    "minimum_distance_km": 77.873,
+    "relative_velocity_km_s": 4.1164,
+    "candidate_score": 0.347062
+  },
+  {
+    "satellite_name": "STARLINK-5387",
+    "satellite_norad": 54842,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 36551,
+    "time": "2026-09-13T13:15:00+00:00",
+    "minimum_distance_km": 81.034,
+    "relative_velocity_km_s": 4.2391,
+    "candidate_score": 0.361341
+  },
+  {
+    "satellite_name": "STARLINK-31594",
+    "satellite_norad": 59332,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34449,
+    "time": "2026-09-13T03:45:00+00:00",
+    "minimum_distance_km": 81.354,
+    "relative_velocity_km_s": 4.17,
+    "candidate_score": 0.360201
+  },
+  {
+    "satellite_name": "STARLINK-36458",
+    "satellite_norad": 67343,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40797,
+    "time": "2026-09-13T01:44:00+00:00",
+    "minimum_distance_km": 82.657,
+    "relative_velocity_km_s": 4.1586,
+    "candidate_score": 0.348531
+  },
+  {
+    "satellite_name": "STARLINK-31078",
+    "satellite_norad": 58638,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33811,
+    "time": "2026-09-12T14:14:00+00:00",
+    "minimum_distance_km": 85.085,
+    "relative_velocity_km_s": 4.0502,
+    "candidate_score": 0.353148
+  },
+  {
+    "satellite_name": "STARLINK-30223",
+    "satellite_norad": 57603,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34316,
+    "time": "2026-09-13T03:25:00+00:00",
+    "minimum_distance_km": 85.156,
+    "relative_velocity_km_s": 4.2455,
+    "candidate_score": 0.362341
+  },
+  {
+    "satellite_name": "STARLINK-31724",
+    "satellite_norad": 59554,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34452,
+    "time": "2026-09-13T04:22:00+00:00",
+    "minimum_distance_km": 91.319,
+    "relative_velocity_km_s": 4.0687,
+    "candidate_score": 0.337491
+  },
+  {
+    "satellite_name": "STARLINK-36414",
+    "satellite_norad": 67468,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 38220,
+    "time": "2026-09-12T18:44:00+00:00",
+    "minimum_distance_km": 92.831,
+    "relative_velocity_km_s": 4.069,
+    "candidate_score": 0.358828
+  },
+  {
+    "satellite_name": "STARLINK-32620",
+    "satellite_norad": 61928,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40794,
+    "time": "2026-09-13T12:23:00+00:00",
+    "minimum_distance_km": 93.419,
+    "relative_velocity_km_s": 4.6908,
+    "candidate_score": 0.346966
+  },
+  {
+    "satellite_name": "STARLINK-36036",
+    "satellite_norad": 66608,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33811,
+    "time": "2026-09-13T04:33:00+00:00",
+    "minimum_distance_km": 96.125,
+    "relative_velocity_km_s": 4.2172,
+    "candidate_score": 0.351002
+  },
+  {
+    "satellite_name": "STARLINK-35984",
+    "satellite_norad": 66814,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 36441,
+    "time": "2026-09-13T04:39:00+00:00",
+    "minimum_distance_km": 97.51,
+    "relative_velocity_km_s": 4.0685,
+    "candidate_score": 0.359465
+  },
+  {
+    "satellite_name": "STARLINK-32957",
+    "satellite_norad": 63124,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 47116,
+    "time": "2026-09-13T11:20:00+00:00",
+    "minimum_distance_km": 101.876,
+    "relative_velocity_km_s": 4.0976,
+    "candidate_score": 0.36029
+  },
+  {
+    "satellite_name": "STARLINK-36428",
+    "satellite_norad": 67362,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34451,
+    "time": "2026-09-13T02:37:00+00:00",
+    "minimum_distance_km": 112.038,
+    "relative_velocity_km_s": 4.1033,
+    "candidate_score": 0.354551
+  },
+  {
+    "satellite_name": "STARLINK-6311",
+    "satellite_norad": 56537,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40797,
+    "time": "2026-09-12T20:59:00+00:00",
+    "minimum_distance_km": 114.207,
+    "relative_velocity_km_s": 4.1703,
+    "candidate_score": 0.34798
+  },
+  {
+    "satellite_name": "STARLINK-35728",
+    "satellite_norad": 66544,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34006,
+    "time": "2026-09-12T14:44:00+00:00",
+    "minimum_distance_km": 114.34,
+    "relative_velocity_km_s": 4.0864,
+    "candidate_score": 0.330956
+  },
+  {
+    "satellite_name": "STARLINK-31964",
+    "satellite_norad": 59895,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 36047,
+    "time": "2026-09-13T10:16:00+00:00",
+    "minimum_distance_km": 118.375,
+    "relative_velocity_km_s": 4.332,
+    "candidate_score": 0.359676
+  },
+  {
+    "satellite_name": "STARLINK-36458",
+    "satellite_norad": 67343,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34451,
+    "time": "2026-09-12T17:54:00+00:00",
+    "minimum_distance_km": 120.188,
+    "relative_velocity_km_s": 4.114,
+    "candidate_score": 0.354459
+  },
+  {
+    "satellite_name": "STARLINK-6335",
+    "satellite_norad": 56527,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34856,
+    "time": "2026-09-12T19:14:00+00:00",
+    "minimum_distance_km": 121.107,
+    "relative_velocity_km_s": 4.1074,
+    "candidate_score": 0.34701
+  },
+  {
+    "satellite_name": "STARLINK-6160",
+    "satellite_norad": 56382,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33795,
+    "time": "2026-09-13T13:26:00+00:00",
+    "minimum_distance_km": 130.11,
+    "relative_velocity_km_s": 4.2212,
+    "candidate_score": 0.350363
+  },
+  {
+    "satellite_name": "STARLINK-32303",
+    "satellite_norad": 61912,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40794,
+    "time": "2026-09-13T00:30:00+00:00",
+    "minimum_distance_km": 130.22,
+    "relative_velocity_km_s": 4.7827,
+    "candidate_score": 0.347003
+  },
+  {
+    "satellite_name": "STARLINK-32549",
+    "satellite_norad": 62118,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 36551,
+    "time": "2026-09-13T11:39:00+00:00",
+    "minimum_distance_km": 130.399,
+    "relative_velocity_km_s": 4.147,
+    "candidate_score": 0.355194
+  },
+  {
+    "satellite_name": "STARLINK-31547",
+    "satellite_norad": 59364,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33821,
+    "time": "2026-09-13T02:50:00+00:00",
+    "minimum_distance_km": 130.571,
+    "relative_velocity_km_s": 4.1098,
+    "candidate_score": 0.360169
+  },
+  {
+    "satellite_name": "STARLINK-31890",
+    "satellite_norad": 59785,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 38220,
+    "time": "2026-09-13T00:18:00+00:00",
+    "minimum_distance_km": 132.15,
+    "relative_velocity_km_s": 4.0689,
+    "candidate_score": 0.359956
+  },
+  {
+    "satellite_name": "STARLINK-31848",
+    "satellite_norad": 59784,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 38220,
+    "time": "2026-09-12T16:21:00+00:00",
+    "minimum_distance_km": 133.098,
+    "relative_velocity_km_s": 4.0723,
+    "candidate_score": 0.359885
+  },
+  {
+    "satellite_name": "STARLINK-36637",
+    "satellite_norad": 67633,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 36551,
+    "time": "2026-09-12T23:43:00+00:00",
+    "minimum_distance_km": 135.65,
+    "relative_velocity_km_s": 4.0585,
+    "candidate_score": 0.354497
+  },
+  {
+    "satellite_name": "STARLINK-6252",
+    "satellite_norad": 56555,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 40797,
+    "time": "2026-09-12T19:25:00+00:00",
+    "minimum_distance_km": 142.273,
+    "relative_velocity_km_s": 4.1052,
+    "candidate_score": 0.337087
+  },
+  {
+    "satellite_name": "STARLINK-32107",
+    "satellite_norad": 59694,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 33811,
+    "time": "2026-09-12T15:51:00+00:00",
+    "minimum_distance_km": 144.813,
+    "relative_velocity_km_s": 4.0808,
+    "candidate_score": 0.345227
+  },
+  {
+    "satellite_name": "STARLINK-6311",
+    "satellite_norad": 56537,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 34451,
+    "time": "2026-09-12T14:44:00+00:00",
+    "minimum_distance_km": 153.128,
+    "relative_velocity_km_s": 4.1205,
+    "candidate_score": 0.353908
+  },
+  {
+    "satellite_name": "STARLINK-33673",
+    "satellite_norad": 63284,
+    "debris_name": "COSMOS 2251 DEB",
+    "debris_norad": 35996,
+    "time": "2026-09-13T13:55:00+00:00",
+    "minimum_distance_km": 194.524,
+    "relative_velocity_km_s": 4.0803,
+    "candidate_score": 0.360747
+  }
+]

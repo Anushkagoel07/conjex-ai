@@ -1,0 +1,29 @@
+{
+  "model": "RandomForestClassifier",
+  "features": [
+    "minimum_distance_km",
+    "relative_velocity_km_s"
+  ],
+  "training_samples": 5736,
+  "training_sources": [
+    "physics-informed synthetic screening scenarios"
+  ],
+  "reference_sources": [
+    "conjunctions.json",
+    "risk_events.json"
+  ],
+  "label_source": "physics-informed prototype thresholds",
+  "thresholds": {
+    "CRITICAL": "minimum_distance_km <= 5 AND relative_velocity_km_s >= 7",
+    "HIGH": "minimum_distance_km <= 10",
+    "MEDIUM": "minimum_distance_km <= 25",
+    "LOW": "minimum_distance_km > 25"
+  },
+  "class_distribution": {
+    "HIGH": 1926,
+    "MEDIUM": 1432,
+    "LOW": 1432,
+    "CRITICAL": 946
+  },
+  "warning": "Not trained on historical collision outcomes and not a calibrated collision-probability model. Confidence is model class confidence, not collision probability."
+}

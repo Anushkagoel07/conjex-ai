@@ -1,0 +1,91 @@
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 58px;
+  height: 28px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface-inset);
+  cursor: pointer;
+  padding: 0;
+  flex: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-border);
+}
+
+.theme-toggle svg {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: var(--text-dim);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  color: inherit;
+}
+
+.theme-toggle .tt-sun {
+  left: 8px;
+}
+
+.theme-toggle .tt-moon {
+  right: 8px;
+}
+
+.theme-toggle .tt-sun line {
+  stroke-width: 1.6;
+}
+
+.theme-toggle .tt-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--accent-soft), var(--accent));
+  border: 1px solid var(--accent-border);
+  box-shadow: 0 0 8px var(--accent-glow);
+  transform: translateX(0);
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* In light mode the toggle target is dark, so the knob slides right. */
+html[data-theme="light"] .theme-toggle {
+  background: var(--surface-inset);
+}
+
+html[data-theme="light"] .theme-toggle .tt-knob {
+  background: linear-gradient(180deg, #2c2620, #14120f);
+  border-color: #3a332a;
+  box-shadow: 0 1px 3px rgba(20, 14, 6, 0.35);
+  transform: translateX(30px);
+}
+
+html[data-theme="light"] .theme-toggle .tt-moon {
+  opacity: 1;
+}
+
+html[data-theme="light"] .theme-toggle .tt-sun {
+  opacity: 0.45;
+}
+
+html[data-theme="dark"] .theme-toggle .tt-sun {
+  opacity: 1;
+}
+
+html[data-theme="dark"] .theme-toggle .tt-moon {
+  opacity: 0.45;
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px var(--accent-glow);
+}

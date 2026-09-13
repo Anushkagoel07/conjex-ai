@@ -1,0 +1,341 @@
+/* Conjunctions page — catalog tools, table, mobile cards */
+
+.catalog-tools {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--row-border);
+  flex-wrap: wrap;
+}
+
+.catalog-search {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: min(260px, 100%);
+}
+
+.catalog-search input {
+  font-size: 12.5px;
+  color: var(--text-strong);
+  background: var(--surface-inset);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  min-width: 0;
+}
+
+.catalog-search input:focus {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px var(--accent-glow);
+}
+
+.risk-filter {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.risk-chip {
+  font-size: 10.5px;
+  font-weight: 650;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: var(--text-mute);
+  background: var(--surface-inset);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 11px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.risk-chip:hover {
+  color: var(--text-strong);
+  border-color: var(--border-strong);
+}
+
+.risk-chip.active {
+  color: var(--accent);
+  border-color: var(--accent-border);
+  background: var(--accent-wash);
+}
+
+.risk-chip.high.active {
+  color: var(--critical);
+  border-color: var(--critical-border);
+  background: var(--critical-bg);
+}
+
+.risk-chip.medium.active {
+  color: var(--warn);
+  border-color: var(--warn-border);
+  background: var(--warn-bg);
+}
+
+.risk-chip.low.active {
+  color: var(--ok);
+  border-color: var(--ok-border);
+  background: var(--ok-bg);
+}
+
+.chip-count {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--text-dim);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.conj-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.conj-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.4px;
+  color: var(--text-mute);
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+  white-space: nowrap;
+}
+
+.conj-table th.num,
+.conj-table td.num {
+  text-align: right;
+}
+
+.th-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.th-sort:hover {
+  color: var(--text-strong);
+}
+
+.th-sort:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--accent-border);
+}
+
+th.sorted .th-sort {
+  color: var(--accent);
+}
+
+.sort-arrow {
+  font-size: 8px;
+  opacity: 0.75;
+}
+
+.conj-table tbody tr {
+  border-bottom: 1px solid var(--row-border);
+}
+
+.conj-table tbody tr:hover {
+  background: var(--row-hover);
+}
+
+.conj-table td {
+  padding: 10px 14px;
+  vertical-align: middle;
+}
+
+.pair-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 260px;
+}
+
+.pair-spacecraft,
+.pair-debris {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  min-width: 0;
+}
+
+.pair-spacecraft {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+.pair-debris {
+  color: var(--text-mute);
+  font-weight: 500;
+}
+
+.pair-spacecraft small,
+.pair-debris small {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.pair-sep {
+  color: var(--text-dim);
+  font-size: 11px;
+}
+
+.tca-cell,
+.dist-cell {
+  white-space: nowrap;
+}
+
+.tca-cell {
+  font-size: 11.5px;
+  color: var(--text-mute);
+}
+
+.dist-cell {
+  font-size: 12.5px;
+  color: var(--text-strong);
+}
+
+td small {
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.col-action {
+  text-align: right;
+}
+
+.row-link {
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.3px;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 4px 9px;
+  white-space: nowrap;
+}
+
+.row-link:hover {
+  background: var(--accent-wash);
+  border-color: var(--accent-border);
+}
+
+.empty-row td {
+  text-align: center;
+  color: var(--text-dim);
+  padding: 22px 14px;
+}
+
+.table-hint {
+  padding: 10px 18px 13px;
+  font-size: 10.5px;
+  color: var(--text-dim);
+}
+
+.hint-key {
+  color: var(--text-mute);
+  font-weight: 650;
+}
+
+/* ---- Mobile card list ---- */
+.conj-cards {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+}
+
+.conj-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--row-border);
+  border-left: 2px solid var(--text-dim);
+  border-radius: var(--radius-sm);
+  background: var(--surface-inset);
+  padding: 10px 12px;
+  transition: border-color 0.16s ease, background 0.16s ease;
+}
+
+.conj-card + li {
+  margin-top: 8px;
+}
+
+.conj-card.risk-high {
+  border-left-color: var(--critical);
+}
+
+.conj-card.risk-medium {
+  border-left-color: var(--warn);
+}
+
+.conj-card.risk-low {
+  border-left-color: var(--ok);
+}
+
+.conj-card:hover {
+  background: var(--row-hover);
+  border-color: var(--border-strong);
+}
+
+.conj-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.conj-card-pair {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-strong);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.conj-card-metrics {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  font-size: 10.5px;
+  color: var(--text-mute);
+}
+
+.conj-cards-empty {
+  text-align: center;
+  color: var(--text-dim);
+  padding: 16px 0;
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .conj-table {
+    display: none;
+  }
+
+  .conj-cards {
+    display: block;
+  }
+}

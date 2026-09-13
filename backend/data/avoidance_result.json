@@ -1,0 +1,63 @@
+{
+  "satellite": "STARLINK-36589",
+  "debris": "COSMOS 2251 DEB",
+  "risk_score": 59.92,
+  "risk_level": "MEDIUM",
+  "original_miss_distance_km": 27.292,
+  "delta_v_m_s": 10.0,
+  "maneuver_direction": "Separation-directed",
+  "maneuver_time": "2026-09-13T11:28:00+00:00",
+  "maneuver_minutes_before_tca": 30,
+  "target_miss_distance_km": 50.0,
+  "target_reached": false,
+  "new_miss_distance_km": 39.4,
+  "miss_distance_improvement_km": 12.109,
+  "improvement_percent": 44.37,
+  "risk_reduction_percent": 16.65,
+  "fuel": {
+    "spacecraft_mass_kg": 500.0,
+    "specific_impulse_s": 220.0,
+    "delta_v_m_s": 10.0,
+    "propellant_mass_kg": 2.312174,
+    "propellant_cost_usd_per_kg": 1000.0,
+    "estimated_propellant_cost_usd": 2312.17,
+    "method": "Tsiolkovsky rocket equation",
+    "assumption_note": "Screening estimate using configurable spacecraft mass, Isp and propellant cost; not a flight-certified fuel budget."
+  },
+  "selection_reason": "No tested delta-v reached the target; selected the largest simulated separation improvement.",
+  "tradeoff_candidates": [
+    {
+      "delta_v_m_s": 5.0,
+      "new_miss_distance_km": 36.292,
+      "improvement_percent": 32.98,
+      "propellant_mass_kg": 1.157427,
+      "estimated_propellant_cost_usd": 1157.43,
+      "target_reached": false
+    },
+    {
+      "delta_v_m_s": 10.0,
+      "new_miss_distance_km": 39.4,
+      "improvement_percent": 44.37,
+      "propellant_mass_kg": 2.312174,
+      "estimated_propellant_cost_usd": 2312.17,
+      "target_reached": false
+    },
+    {
+      "delta_v_m_s": 15.0,
+      "new_miss_distance_km": 28.179,
+      "improvement_percent": 3.25,
+      "propellant_mass_kg": 3.464249,
+      "estimated_propellant_cost_usd": 3464.25,
+      "target_reached": false
+    },
+    {
+      "delta_v_m_s": 20.0,
+      "new_miss_distance_km": 33.212,
+      "improvement_percent": 21.69,
+      "propellant_mass_kg": 4.613656,
+      "estimated_propellant_cost_usd": 4613.66,
+      "target_reached": false
+    }
+  ],
+  "limitation": "Simulated separation maneuver. It does not model full spacecraft dynamics, covariance, thrust direction constraints, or a flight-certified collision probability."
+}

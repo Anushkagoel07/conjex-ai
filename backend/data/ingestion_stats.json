@@ -1,0 +1,46 @@
+{
+  "fetched": 18701,
+  "invalid": 0,
+  "duplicates_removed": 18,
+  "stale_records": 0,
+  "valid_unique": 18683,
+  "sources": {
+    "active_satellites": {
+      "fetched": 16019,
+      "invalid": 0,
+      "duplicates": 0,
+      "stale": 0,
+      "error": null
+    },
+    "cosmos_2251_debris": {
+      "fetched": 584,
+      "invalid": 0,
+      "duplicates": 0,
+      "stale": 0,
+      "error": null
+    },
+    "fengyun_1c_debris": {
+      "fetched": 1969,
+      "invalid": 0,
+      "duplicates": 0,
+      "stale": 0,
+      "error": null
+    },
+    "iridium_33_debris": {
+      "fetched": 109,
+      "invalid": 0,
+      "duplicates": 0,
+      "stale": 0,
+      "error": null
+    },
+    "stations": {
+      "fetched": 20,
+      "invalid": 0,
+      "duplicates": 18,
+      "stale": 0,
+      "error": null
+    }
+  },
+  "generated_at": "2026-09-12T13:41:24.502299+00:00",
+  "output_file": "data/objects.json"
+}

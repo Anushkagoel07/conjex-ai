@@ -1,0 +1,324 @@
+/* Event inspector — selected conjunction assessment */
+
+.inspector-body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inspector-empty {
+  padding: 28px 18px;
+  color: var(--text-dim);
+  font-size: 12px;
+  text-align: center;
+}
+
+.inspector-panel.risk-high {
+  border-color: var(--critical-border);
+}
+
+.inspector-panel.risk-high .panel-eyebrow {
+  color: var(--critical);
+}
+
+.inspector-panel.risk-medium .panel-eyebrow {
+  color: var(--warn);
+}
+
+/* Spacecraft vs debris */
+.objects-duel {
+  display: grid;
+  grid-template-columns: 1fr 34px 1fr;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.object-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-inset);
+  padding: 11px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.object-role {
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+}
+
+.object-name {
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--text-strong);
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.object-norad {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  color: var(--text-mute);
+}
+
+.object-block.primary {
+  border-left: 2px solid var(--accent);
+}
+
+.object-block.debris {
+  border-left: 2px solid var(--critical);
+}
+
+.duel-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.duel-line {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--border-strong),
+    transparent
+  );
+}
+
+.duel-arrow {
+  color: var(--text-mute);
+  font-size: 12px;
+}
+
+/* Risk score gauge */
+.risk-score-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 13px;
+  background: var(--surface-inset);
+}
+
+.risk-score-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.risk-score-value {
+  font-family: var(--mono);
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.risk-score-value small {
+  font-size: 9px;
+  color: var(--text-dim);
+  margin-left: 2px;
+}
+
+.risk-score-value.high {
+  color: var(--critical);
+}
+
+.risk-score-value.medium {
+  color: var(--warn);
+}
+
+.risk-score-value.low {
+  color: var(--ok);
+}
+
+.risk-gauge {
+  position: relative;
+  height: 7px;
+  border-radius: 4px;
+  background: var(--hover-bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.risk-gauge-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.risk-gauge-fill.high {
+  background: var(--critical);
+}
+
+.risk-gauge-fill.medium {
+  background: var(--warn);
+}
+
+.risk-gauge-fill.low {
+  background: var(--ok);
+  opacity: 0.75;
+}
+
+.risk-score-note {
+  margin: 9px 0 0;
+  font-size: 9.5px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+
+.gauge-tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+  opacity: 0.9;
+}
+
+.gauge-tick.t25 {
+  left: 25%;
+}
+
+.gauge-tick.t50 {
+  left: 50%;
+}
+
+.gauge-tick.t75 {
+  left: 75%;
+}
+
+/* AI anomaly index */
+.ai-anomaly-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ai-anomaly-row .metric-label {
+  margin-bottom: 0;
+}
+
+.ai-anomaly-value {
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.ai-anomaly-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--hover-bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.ai-anomaly-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.85;
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Metric grid */
+.inspector-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.imetric {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  background: var(--surface-inset);
+  min-width: 0;
+}
+
+.metric-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--text-dim);
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+.metric-value {
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--text-strong);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.metric-value small {
+  font-size: 9.5px;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-left: 1px;
+}
+
+.metric-time {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 1240px) {
+  .inspector-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .objects-duel {
+    grid-template-columns: 1fr;
+  }
+
+  .duel-link {
+    flex-direction: row;
+  }
+
+  .duel-line {
+    width: auto;
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--border-strong),
+      transparent
+    );
+  }
+
+  .duel-arrow {
+    transform: rotate(0deg);
+  }
+
+  .inspector-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inspector-body {
+    padding: 14px 12px;
+  }
+}

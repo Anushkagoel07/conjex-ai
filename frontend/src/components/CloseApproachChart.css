@@ -1,0 +1,180 @@
+/* Close-approach chart — dark plot area, thin borders, restrained accents */
+
+.ca-chart {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  overflow: hidden;
+  min-width: 0;
+}
+
+.ca-chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--row-border);
+  flex-wrap: wrap;
+}
+
+.ca-chart-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--text-strong);
+}
+
+.ca-chart-sub {
+  margin: 2px 0 0;
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.ca-projection {
+  font-size: 9.5px;
+  color: var(--text-dim);
+}
+
+.ca-chart-frame {
+  background: var(--chart-bg);
+  border-bottom: 1px solid var(--row-border);
+}
+
+.ca-chart-frame svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Grid + axes */
+.ca-grid {
+  stroke: var(--row-border);
+  stroke-width: 1;
+}
+
+.ca-axis-line {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.ca-axis-label {
+  font-size: 10px;
+  fill: var(--text-dim);
+}
+
+.ca-axis-unit {
+  fill: var(--text-dim);
+  opacity: 0.75;
+}
+
+/* Trajectories */
+.ca-line.original {
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.ca-line.post {
+  stroke: var(--accent);
+  stroke-width: 1.8;
+  stroke-dasharray: 7 5;
+  stroke-linejoin: round;
+  opacity: 0.85;
+}
+
+.ca-line.debris {
+  stroke: var(--critical);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+/* Closest approach */
+.ca-ca-line {
+  stroke: var(--ok);
+  stroke-width: 1.4;
+  stroke-dasharray: 3 3;
+}
+
+.ca-marker-x {
+  stroke: var(--text-strong);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.ca-marker-maneuver {
+  fill: var(--accent);
+  stroke: var(--text-strong);
+  stroke-width: 1.6;
+}
+
+/* Annotations */
+.ca-annot {
+  font-size: 11px;
+  fill: var(--text-mute);
+}
+
+.ca-annot-strong {
+  font-size: 11.5px;
+  font-weight: 650;
+  fill: var(--text-strong);
+}
+
+/* Legend */
+.ca-legend {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  font-size: 10.5px;
+  color: var(--text-mute);
+}
+
+.ca-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.ca-legend-note {
+  font-size: 9px;
+  color: var(--text-dim);
+  margin-left: auto;
+}
+
+.legend-line {
+  width: 20px;
+  height: 0;
+  border-top: 2px solid var(--accent);
+  flex: none;
+}
+
+.legend-line.post {
+  border-top-style: dashed;
+  opacity: 0.85;
+}
+
+.legend-line.debris {
+  border-top-color: var(--critical);
+}
+
+.legend-x {
+  color: var(--text-strong);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 1px solid var(--text-strong);
+  flex: none;
+}
